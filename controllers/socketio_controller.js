@@ -63,6 +63,7 @@ function messageSaveSend(data, url,sender){
         sendDateTime:data.msg.createTimeInMillis,
         content:data.msg
     }
+    // console.log(jsondata)
     request({
         // url: url + '?token=' + req.query.token || req.body.token,
         url: url ,
@@ -70,10 +71,12 @@ function messageSaveSend(data, url,sender){
         body: jsondata,
         json:true
     }, function(err, response){
+        // console.log(err)
         if(err) {
             // do-something
         }
         else{
+            // console.log('success')
             // console.log(response.body);
             // send message
             /// send to sendBy
@@ -268,8 +271,11 @@ function sendToReceiver(messageType, receiver, sendBy, userAppServer, userWechat
 
                         // others: no process
                     }
-                }                      
-            }
+
+
+                    // others: no process
+                }
+            }                      
         });
     }
 

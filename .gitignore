@@ -8,5 +8,19 @@ web.config
 #过滤文件夹  
 uploads/
 logs/
+<<<<<<< HEAD
 node_modules/
 certs/
+=======
+certs/
+node_modules/  
+
+#过滤deploy相关文件
+deploy.sh
+hahahahaha.log
+mongodb.conf
+mongodb/
+my-proxy.conf
+nginx/
+pre-setup.sh
+>>>>>>> 893a982f9a0b6156673efff8459cea6b13fe972d
